@@ -1,0 +1,5 @@
+mime.types
+nginx.conf
+nginx.conf.compiled
+logs
+*.lua
