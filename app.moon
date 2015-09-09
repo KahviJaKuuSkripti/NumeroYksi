@@ -1,5 +1,8 @@
-lapis = require "lapis"
+lapis = require "lapis" -- Lapis = palvelin
+Sivupalkki = require "Sivupalkki" -- Hae sivupalkkijärjestelmä
 
 class extends lapis.Application
-  "/": =>
-    "Welcome to Lapis #{require "lapis.version"}!"
+  "/": => -- http://localhost/
+    @html ->
+      h1 "HTML-testi"
+      script src: "static/test.js", ""
